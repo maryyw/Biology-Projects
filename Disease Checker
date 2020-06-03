@@ -1,0 +1,65 @@
+print("Disease Checker - which of the following most describes how you feel?")
+print("Press 1 if you are experiencing breathlessness")
+print("Press 2 if there is unexplained weight loss")
+print("Press any number greater than 10 to see connections")
+
+def diagnosis(disease):
+    return "\nYou are diagnosed with {}".format(disease)
+
+def heart_attack():
+    return "\n What: It is a death of a segment of heart muscle caused by a loss of blood supply (www.heart.org). \n Cause: The coronary arteries (the major blood vessels that supply the heart with blood) become clogged with deposits of cholesterol (Newman) \n Next Steps: Call the Local Emergency Number, chew and swallow aspirin (if you are not allergic), take nitroglycerin if you have been prescribe (www.heart.org). \n \n Due to our living environment, for convenience, many people choose to eat food with high cholesterol (fries, frozen food, chips, snacks). Our society has grown used eating out for the sake of convenience. However through science and technology,we can clean out arteries using micro-robots to perform microsurgeries."
+
+def gastroesophaegal():
+    return "\n What: A condition where stomach acid persistently and regularly flows up into the esophagus. It is the acid that causes heartburns (MacGill).\n Cause: Overeating, lying down after eating, particular foods, eating too fast, obesity (pressures the abdomen). \n Symptoms: nausea or vomiting, bad breath, respiratory problems, difficulty or pain when swallowing, decay. \n Next Steps: Seek the doctors, typically proton pump inhibitors will decrease the amount of stomach acid.\n \n Connections: Society nowadays tend to overeat and induldge in many various foods we are able to have unlike 100 years ago. Not only this, we are susceptible to growing tired after a large meal causing us to lie down after eating. The environment we live in causes us to constantly work and meet strict deadlines leaving little time to eat (eating faster). Through science and technology, we have developed pills that substitute for all vitamins we get from food."
+
+def pneumonia():
+    return "\n What: Infection in the lungs caused by bacteria or viruses, inflames the alveoli and fills up with fluid making it hard to breathe (Pneumonia - Lung Health Foundation - Prevention.)\n Cause: viral infections, bacterial infections, or fungi.\n Symptoms: Coughing, fever, sweating and shaking chills, shortness of breath, rapid, shallow breathing, sharp or stabbing chest pain that gets worse when you breathe deeply or cough, loss of appetite, low energy, and fatigue.\n Next Steps: Control your fever with aspirin (do not give to children), drink plenty of water, do not take cough medicine unless prescribed, get lots of rest.\n \n In the environment in our society, there are many chemicals floating around including bacteria and viruses so if we do not take precautions, it is easy to be susceptible to pneumonia especially since now is the Covid-19 outbreak. Thankfully, relying on science and technology, we can find a cure faster than before."
+
+def obesity():
+    return "\n What: having too much body fat (Balentine). \n Cause: caused by taking in more calories than you burn off, consistently, over time/ genetics.\n Symptoms: breathlessness, increased sweating, snoring, inability to cope with sudden physical activity, feeling very tired every day, back and joint pains, low confidence and self esteem.\n Next Steps: Controlled diet (low-calorie) and exercise, hydration, over-the-counter pills (not advised) such as orlistat.\n \n Technology has been a large factor in obesity as it has replaced a lot of manual work, people have to do such as laundry, cooking (online ordering), cleaning (robots) and inforces laziness. Society has grown to be inseparable from technology thus more efforts to keep in shape are put into place. The environment one lives in may hinder them to living a healthy life if there are no gyms around, small living space (condos, apartments), no motivation."
+
+def diabetes():
+    return "\n What: Disease that occurs when your blood glucose is too high (Nall).\n Cause: Absence or insufficient production of insulin, or an inability of the body to properly use insulin.\n Symptoms: unusual thirst, frequent urination, weight change (gain or loss), extreme fatigue or lack of energy, blurred vision, frequent or recurring infections, cuts and bruises that are slow to heal.\n Next Steps: Diabetes 2: control your condition with lifestyle changes, such as diet and exercise, insulin may be needed to control blood sugar levels.\n take insulin as prescribed, eat a healthy, balanced diet with accurate carbohydrate counts, check blood sugar levels as prescribed, get regular physical activity.\n \n Connection: Looking into environmental factors, the food in the country, family lifestyle plays a huge role on one's diets which may impact their chances of being diabetic. In this society, people may generalize diabetics to be obese and if they are not, they may disregard the symptoms and worsen their disease as time passes without treatment. However, thankfully, technology and science has allowed us to know that insulin helps to help diabetics."
+
+def connections():
+    print("This product, Symptom Checker, deals with science, technology, society and environment through the way it is a coded program so it involves a lot of technology and computer science behind it. Our society nowadays has quickly adapted to the advanced technology of user interfaces and this would be the easiest way for people to be guided about various diseases; this is a better environment for people to be guided. It also saves people time and gas from travelling to the doctor's office which benefits the environment as a whole. ")
+
+while True:
+    number_input = int(input("Enter number: "))
+
+    if number_input == 1:
+        print("Press 3 if you are experiencing lightheadedness or upper body discomfort (neck, head)")
+        print("Press 4 if you have difficulty swallowing or experience regurgitation of food")
+        print("Press 5 if you are experiencing fevers, chills, sharp chest pain")
+        print("Press 6 if you are unable to cope with sudden physical activity, experience joint pains or have low self esteem")
+
+    if number_input == 3:
+        print(diagnosis("heart attacks"))
+        print(heart_attack())
+        break
+    elif number_input == 4:
+        print(diagnosis("gastroesophaegal reflux disease"))
+        print(gastroesophaegal())
+        break
+    elif number_input == 5:
+        print(diagnosis("pneumonia"))
+    elif number_input == 6:
+        print(diagnosis("obesity"))
+            
+    elif number_input == 2:
+        print("Press enter if you are experiencing increased thirst, frequent urination, extreme hunger, ketone in urine")
+
+        if number_input == "":
+                print(diagnosis("Diabetes Type 1 or 2"))
+
+
+    # else:
+    #     print(connections())
+    #     break
+
+user_input = input("Please enter Citations to view citation: ")
+if user_input == "Citations":
+    print("Balentine, Jerry R. “Obesity Definition, Charts, BMI, Causes, Treatment.” MedicineNet, MedicineNet, 2 Dec. 2019, www.medicinenet.com/obesity_weight_loss/article.htm.\nMacGill, Marcus. “GERD: Symptoms, Causes, and Treatment.” Medical News Today, MediLexicon International, 18 Jan. 2018, www.medicalnewstoday.com/articles/14085.\nNall, Rachel. “Diabetes: Symptoms, Treatment, and Early Diagnosis.” Medical News Today, MediLexicon International, 9 Jan. 2020, www.medicalnewstoday.com/articles/323627.\nNewman, Tim. “Heart Attack: Causes, Symptoms, and Treatments.” Medical News Today, MediLexicon International, 26 July 2017, www.medicalnewstoday.com/articles/151444.\n“Pneumonia - Lung Health Foundation - Prevention.” Lung Health Foundation, lunghealth.ca/lung-disease/a-to-z/pneumonia/?gclid=Cj0KCQjwlN32BRCCARIsADZ-J4vTyy_fkqlM2reuYIfnjRCMsst-iCJFSI2Ub4worzd2aMCEcZJT4XwaAs8PEALw_wcB.\n“Warning Signs of a Heart Attack.” Www.heart.org, www.heart.org/en/health-topics/heart-attack/warning-signs-of-a-heart-attack.")
+
+
+
